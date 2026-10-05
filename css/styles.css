@@ -1,7 +1,7 @@
 /* ==========================================================================
    PAGUREO — SISTEMA DE DISEÑO DE ALTA CONVERSIÓN
    Producto: Colchón Slim One
-   Canal de Cierre: WhatsApp Oficial (+57 321 281 5741)
+   Canal de Cierre: WhatsApp Oficial (+57 318 462 5453)
    Paleta 60/30/10: 60% Blanco, 30% Azul (#0360AB), 10% Magenta (#C01B83)
    ========================================================================== */
 
@@ -278,6 +278,13 @@ button {
   background: transparent !important;
   background-color: transparent !important;
   mix-blend-mode: normal !important;
+}
+
+/* Logo blanco sobre la foto: sombra suave para que se lea también sobre zonas claras */
+@media (min-width: 769px) {
+  .hero-brand-logo {
+    filter: drop-shadow(0 1px 6px rgba(11, 28, 48, 0.45));
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -741,6 +748,107 @@ button {
   letter-spacing: -0.02em;
 }
 
+/* Ilustración a escala: misma altura (190 cm) en todas, el ancho cambia según la medida */
+.pricing-visual {
+  --visual-h: 210px;
+  margin: 6px 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.pricing-diagram {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  height: var(--visual-h);
+}
+
+.pricing-visual-img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+/* Cotas tipo plano: línea con topes y etiqueta centrada */
+.pricing-dim {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand-blue);
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.pricing-dim::before {
+  content: "";
+  position: absolute;
+  border: 0 solid var(--brand-blue);
+}
+
+.pricing-dim > span {
+  position: relative;
+  background-color: #ffffff;
+  padding: 2px 6px;
+}
+
+.pricing-dim-h {
+  width: 22px;
+}
+
+.pricing-dim-h::before {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 10px;
+  transform: translateX(-50%);
+  border-top-width: 1.5px;
+  border-bottom-width: 1.5px;
+  background: linear-gradient(var(--brand-blue), var(--brand-blue)) center / 1.5px 100% no-repeat;
+}
+
+.pricing-dim-h > span {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 6px 2px;
+}
+
+/* La cota horizontal ocupa el ancho de la imagen (alto × proporción) */
+.pricing-dim-w {
+  height: 22px;
+  margin-left: 32px;
+  width: calc(var(--visual-h) * var(--ratio, 0.526));
+}
+
+.pricing-dim-w::before {
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 10px;
+  transform: translateY(-50%);
+  border-left-width: 1.5px;
+  border-right-width: 1.5px;
+  background: linear-gradient(var(--brand-blue), var(--brand-blue)) center / 100% 1.5px no-repeat;
+}
+
+.pricing-visual-caption {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.pricing-visual-caption .material-symbols-outlined {
+  font-size: 20px;
+  color: var(--brand-magenta);
+}
+
 .pricing-amount-block {
   margin: 10px 0;
   width: 100%;
@@ -1181,15 +1289,21 @@ button {
   
   /* Medidas y Precios en Tablet */
   .pricing-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 18px;
   }
-  
+
   .pricing-card {
-    padding: 30px 20px;
+    padding: 30px 16px;
   }
-  
+
   .pricing-amount-val {
-    font-size: 2.3rem;
+    font-size: clamp(1.9rem, 3.6vw, 2.3rem);
+  }
+
+  .pricing-cta-box .btn {
+    padding-left: 14px;
+    padding-right: 14px;
   }
   
   /* Beneficios en Tablet */

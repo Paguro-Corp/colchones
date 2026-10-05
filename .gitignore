@@ -8,3 +8,6 @@ reference_stitch/
 Thumbs.db
 .vscode/
 .idea/
+
+# Local tooling
+.claude/

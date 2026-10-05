@@ -1,0 +1,11 @@
+{
+  "name": "Pagureo — Colchón Slim One",
+  "short_name": "Pagureo",
+  "icons": [
+    { "src": "images/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "images/favicon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#0360ab",
+  "background_color": "#ffffff",
+  "display": "browser"
+}

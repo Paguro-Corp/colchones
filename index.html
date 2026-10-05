@@ -8,7 +8,13 @@
   <meta name="keywords" content="colchon slim one, colchon pagureo, colchon semi firme, colchon doble cara bogota, comprar colchon por whatsapp, descanso pagureo">
   
   <!-- Favicon Pagureo -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0360ab">
   
   <!-- Google Fonts & Material Symbols -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,14 +47,18 @@
         <div class="hero-content-column">
           <!-- Logotipo Oficial Pagureo fuera del cuadro blanco -->
           <div class="hero-brand-standalone">
-            <img 
-              src="image-Photoroom.png" 
-              alt="Pagureo" 
-              class="hero-brand-logo"
-              width="376"
-              height="92"
-              loading="eager"
-            >
+            <!-- Logo blanco sobre la foto (tablet/escritorio); logo oscuro sobre fondo blanco (móvil) -->
+            <picture>
+              <source media="(min-width: 769px)" srcset="images/pagureo-logo-white.png">
+              <img
+                src="images/pagureo-logo.png"
+                alt="Pagureo"
+                class="hero-brand-logo"
+                width="775"
+                height="181"
+                loading="eager"
+              >
+            </picture>
           </div>
 
           <!-- Panel de contenido blanco translúcido -->
@@ -69,7 +79,7 @@
             
             <div class="hero-ctas">
               <a 
-                href="https://wa.me/573212815741?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n." 
+                href="https://wa.me/573184625453?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n." 
                 class="btn btn-primary btn-lg" 
                 id="heroPrimaryCta" 
                 data-whatsapp-cta
@@ -268,7 +278,7 @@
             <!-- CTA de la Sección Beneficios -->
             <div class="benefits-cta-box">
               <a 
-                href="https://wa.me/573212815741?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n." 
+                href="https://wa.me/573184625453?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n." 
                 class="btn btn-primary btn-lg" 
                 id="benefitsCtaBtn" 
                 data-whatsapp-cta
@@ -307,7 +317,7 @@
             Encuentra el tamaño ideal <span class="accent-blue">para tu descanso</span>
           </h2>
           <p class="section-subtitle">
-            Elige la medida que mejor se adapta a tu cama.
+            Compara el ancho de cada medida y elige la que mejor se adapta a tu cama. Todas tienen 190 cm de largo.
           </p>
         </div>
         
@@ -320,13 +330,31 @@
               <span class="pricing-size-tag">Medida individual</span>
               <h3 class="pricing-size-title">90/100</h3>
             </div>
+            <figure class="pricing-visual" style="--ratio: calc(100 / 190);">
+              <div class="pricing-diagram">
+                <span class="pricing-dim pricing-dim-h" aria-hidden="true"><span>190 cm</span></span>
+                <img 
+                  src="images/medidas/slim-one-100x190.webp" 
+                  alt="Vista superior del Colchón Slim One de 90 / 100 cm de ancho por 190 cm de largo: ideal para 1 persona" 
+                  class="pricing-visual-img"
+                  width="400"
+                  height="760"
+                  loading="lazy"
+                >
+              </div>
+              <span class="pricing-dim pricing-dim-w" aria-hidden="true"><span>90 / 100 cm</span></span>
+              <figcaption class="pricing-visual-caption">
+                <span class="material-symbols-outlined" aria-hidden="true">person</span>
+                Ideal para 1 persona
+              </figcaption>
+            </figure>
             <div class="pricing-amount-block">
               <span class="pricing-amount-val">$649.900</span>
             </div>
             <p class="pricing-product-name">Colchón Slim One</p>
             <div class="pricing-cta-box">
               <a 
-                href="https://wa.me/573212815741?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20estoy%20interesado%20en%20la%20medida%2090%2F100%20de%20%24649.900." 
+                href="https://wa.me/573184625453?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20estoy%20interesado%20en%20la%20medida%2090%2F100%20de%20%24649.900." 
                 class="btn btn-primary" 
                 data-whatsapp-cta
                 target="_blank" 
@@ -346,13 +374,31 @@
               <span class="pricing-size-tag">Medida semidoble</span>
               <h3 class="pricing-size-title">120 × 190</h3>
             </div>
+            <figure class="pricing-visual" style="--ratio: calc(120 / 190);">
+              <div class="pricing-diagram">
+                <span class="pricing-dim pricing-dim-h" aria-hidden="true"><span>190 cm</span></span>
+                <img 
+                  src="images/medidas/slim-one-120x190.webp" 
+                  alt="Vista superior del Colchón Slim One de 120 cm de ancho por 190 cm de largo: 1 persona con más espacio" 
+                  class="pricing-visual-img"
+                  width="480"
+                  height="760"
+                  loading="lazy"
+                >
+              </div>
+              <span class="pricing-dim pricing-dim-w" aria-hidden="true"><span>120 cm</span></span>
+              <figcaption class="pricing-visual-caption">
+                <span class="material-symbols-outlined" aria-hidden="true">person</span>
+                1 persona con más espacio
+              </figcaption>
+            </figure>
             <div class="pricing-amount-block">
               <span class="pricing-amount-val">$749.900</span>
             </div>
             <p class="pricing-product-name">Colchón Slim One</p>
             <div class="pricing-cta-box">
               <a 
-                href="https://wa.me/573212815741?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20estoy%20interesado%20en%20la%20medida%20120%20%C3%97%20190%20de%20%24749.900." 
+                href="https://wa.me/573184625453?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20estoy%20interesado%20en%20la%20medida%20120%20%C3%97%20190%20de%20%24749.900." 
                 class="btn btn-primary" 
                 data-whatsapp-cta
                 target="_blank" 
@@ -372,13 +418,31 @@
               <span class="pricing-size-tag">Medida doble</span>
               <h3 class="pricing-size-title">140 × 190</h3>
             </div>
+            <figure class="pricing-visual" style="--ratio: calc(140 / 190);">
+              <div class="pricing-diagram">
+                <span class="pricing-dim pricing-dim-h" aria-hidden="true"><span>190 cm</span></span>
+                <img 
+                  src="images/medidas/slim-one-140x190.webp" 
+                  alt="Vista superior del Colchón Slim One de 140 cm de ancho por 190 cm de largo: ideal para 2 personas" 
+                  class="pricing-visual-img"
+                  width="560"
+                  height="760"
+                  loading="lazy"
+                >
+              </div>
+              <span class="pricing-dim pricing-dim-w" aria-hidden="true"><span>140 cm</span></span>
+              <figcaption class="pricing-visual-caption">
+                <span class="material-symbols-outlined" aria-hidden="true">group</span>
+                Ideal para 2 personas
+              </figcaption>
+            </figure>
             <div class="pricing-amount-block">
               <span class="pricing-amount-val">$799.900</span>
             </div>
             <p class="pricing-product-name">Colchón Slim One</p>
             <div class="pricing-cta-box">
               <a 
-                href="https://wa.me/573212815741?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20estoy%20interesado%20en%20la%20medida%20140%20%C3%97%20190%20de%20%24799.900." 
+                href="https://wa.me/573184625453?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20estoy%20interesado%20en%20la%20medida%20140%20%C3%97%20190%20de%20%24799.900." 
                 class="btn btn-primary" 
                 data-whatsapp-cta
                 target="_blank" 
@@ -539,7 +603,7 @@
             
             <div class="specs-cta-box">
               <a 
-                href="https://wa.me/573212815741?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n." 
+                href="https://wa.me/573184625453?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n." 
                 class="btn btn-primary btn-lg" 
                 id="specCtaBtn" 
                 data-whatsapp-cta
@@ -654,7 +718,7 @@
             <p>Habla con nuestro equipo y recibe asesoría sobre el Colchón Slim One.</p>
           </div>
           <a 
-            href="https://wa.me/573212815741?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n." 
+            href="https://wa.me/573184625453?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n." 
             class="btn btn-primary btn-lg" 
             id="finalClosingCtaBtn" 
             data-whatsapp-cta
@@ -681,7 +745,7 @@
       <span class="sticky-mobile-sub">Desde $650.000 • Asesoría WhatsApp</span>
     </div>
     <a 
-      href="https://wa.me/573212815741?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n." 
+      href="https://wa.me/573184625453?text=Hola%20Pagureo%2C%20vi%20el%20Colch%C3%B3n%20Slim%20One%20en%20la%20p%C3%A1gina%20y%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n." 
       class="btn btn-primary" 
       data-whatsapp-cta
       target="_blank" 
