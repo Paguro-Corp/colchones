@@ -23,7 +23,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
   
   <!-- Estilos del Sistema Pagureo -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=2.2">
 </head>
 <body>
 
@@ -628,7 +628,317 @@
     </section>
 
     <!-- ========================================================================
-         SECCIÓN 5: FAQ & FINAL CTA
+         SECCIÓN 6: NUESTRO PUNTO FÍSICO EN BOGOTÁ
+         ======================================================================== -->
+    <section class="store-section" id="punto-fisico">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-badge badge-magenta">
+            <span class="material-symbols-outlined" style="font-size: 16px;">storefront</span>
+            <span>NUESTRO PUNTO FÍSICO</span>
+          </div>
+          <h2 class="section-title">
+            Visita nuestra tienda física <span class="accent-blue">en Restrepo, Bogotá</span>
+          </h2>
+          <p class="section-subtitle">
+            Te esperamos en nuestra tienda física oficial en el tradicional sector del Restrepo en Bogotá. Ven a conocer el Colchón Slim One en persona, comprueba su soporte y recibe asesoría para renovar tu descanso.
+          </p>
+        </div>
+
+        <!-- Layout 2 Columnas: Carrusel del punto físico a la izquierda, Descripción a la derecha -->
+        <div class="store-two-col-layout">
+          
+          <!-- Columna Izquierda: Carrusel con las imágenes del punto físico (Sin espacio blanco y sin footer de dirección) -->
+          <article class="store-carousel-card">
+            <div class="store-carousel" id="storeCarousel">
+              
+              <div class="store-carousel-slides">
+                
+                <!-- Diapositiva 1: Fachada Principal -->
+                <div class="store-slide active" data-slide="0" data-store-index="0" role="button" tabindex="0" aria-label="Ver imagen ampliada de la fachada en Restrepo">
+                  <img 
+                    src="images/Punto físico en Restrepo.png" 
+                    alt="Punto físico oficial en Bogotá - Fachada en Barrio Restrepo Calle 20 Sur #18-14" 
+                    class="store-slide-img"
+                    loading="lazy"
+                    onerror="if (!this.dataset.retried) { this.dataset.retried = '1'; this.src = 'images/Punto%20f%C3%ADsico%20en%20Restrepo.png'; }"
+                  >
+                  <button class="media-zoom-btn" type="button" aria-label="Ampliar imagen de la fachada">
+                    <span class="material-symbols-outlined">zoom_in</span>
+                  </button>
+                </div>
+
+                <!-- Diapositiva 2: Exhibición Interior y Prueba -->
+                <div class="store-slide" data-slide="1" data-store-index="1" role="button" tabindex="0" aria-label="Ver imagen ampliada de la exhibición y prueba en tienda">
+                  <img 
+                    src="images/Showroom de colchones con vista urbana.png" 
+                    alt="Espacio de exhibición y prueba de colchones con atención personalizada en tienda física" 
+                    class="store-slide-img"
+                    loading="lazy"
+                    onerror="if (!this.dataset.retried) { this.dataset.retried = '1'; this.src = 'images/Showroom%20de%20colchones%20con%20vista%20urbana.png'; }"
+                  >
+                  <button class="media-zoom-btn" type="button" aria-label="Ampliar imagen de exhibición">
+                    <span class="material-symbols-outlined">zoom_in</span>
+                  </button>
+                </div>
+
+              </div>
+
+              <!-- Controles del carrusel: Flechas, Contador '1 / 2' y Paginador integrados -->
+              <div class="store-carousel-controls">
+                <button class="carousel-arrow prev" id="storeCarouselPrev" type="button" aria-label="Foto anterior del punto físico">
+                  <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <div class="store-carousel-counter" id="storeCarouselCounter">
+                  <span>1</span> / <span>2</span>
+                </div>
+                <div class="store-carousel-dots" id="storeCarouselDots">
+                  <button class="carousel-dot active" type="button" data-dot="0" aria-label="Ver foto 1"></button>
+                  <button class="carousel-dot" type="button" data-dot="1" aria-label="Ver foto 2"></button>
+                </div>
+                <button class="carousel-arrow next" id="storeCarouselNext" type="button" aria-label="Foto siguiente del punto físico">
+                  <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Columna Derecha: Tarjeta de Descripción (Sin imagen encima) -->
+          <article class="store-description-card">
+            <div class="store-description-header">
+              <span class="factory-eyebrow">ATENCIÓN PERSONALIZADA</span>
+              <h3 class="experience-title">Ven, pruébalo y siente la diferencia</h3>
+              <p class="store-description-intro">
+                Te esperamos en nuestra tienda física en el tradicional sector del Restrepo en Bogotá. Compara medidas, siente la suavidad de la tela Jacquard y recibe asesoría de personas expertas en descanso.
+              </p>
+            </div>
+
+            <div class="store-info-grid">
+              <div class="store-info-item">
+                <div class="info-icon-wrapper">
+                  <span class="material-symbols-outlined">pin_drop</span>
+                </div>
+                <div class="info-content">
+                  <h4>Dirección Exacta</h4>
+                  <p>Calle 20 Sur #18-14, Barrio Restrepo, Bogotá (sector tradicional del descanso).</p>
+                </div>
+              </div>
+
+              <div class="store-info-item">
+                <div class="info-icon-wrapper">
+                  <span class="material-symbols-outlined">schedule</span>
+                </div>
+                <div class="info-content">
+                  <h4>Horarios de Atención</h4>
+                  <p>Lun a Sáb: 9:00 am - 6:30 pm | Dom y Festivos: 10:00 am - 4:00 pm.</p>
+                </div>
+              </div>
+
+              <div class="store-info-item">
+                <div class="info-icon-wrapper">
+                  <span class="material-symbols-outlined">bed</span>
+                </div>
+                <div class="info-content">
+                  <h4>Prueba en Persona</h4>
+                  <p>Acuéstate, comprueba la firmeza semi firme y confirma las dimensiones ideales para tu cama.</p>
+                </div>
+              </div>
+
+              <div class="store-info-item">
+                <div class="info-icon-wrapper">
+                  <span class="material-symbols-outlined">handshake</span>
+                </div>
+                <div class="info-content">
+                  <h4>Trato Directo con el Fabricante</h4>
+                  <p>Precios justos sin intermediarios y respaldo presencial con garantía real.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="store-action-buttons">
+              <a 
+                href="https://wa.me/573184625453?text=Hola%20Pagureo%2C%20quiero%20visitar%20el%20punto%20f%C3%ADsico%20en%20el%20Restrepo%20y%20conocer%20m%C3%A1s%20del%20Colch%C3%B3n%20Slim%20One." 
+                class="btn btn-primary"
+                data-whatsapp-cta
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <svg class="whatsapp-icon-svg" viewBox="5.5 5.8 12.5 12.2" aria-hidden="true">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 2.011.924 3.149.924l.005.001c3.18 0 5.767-2.587 5.768-5.766.001-3.182-2.585-5.767-5.773-5.773zm3.364 8.163c-.14.394-.712.723-1.002.771-.278.046-.641.082-1.849-.418-1.547-.64-2.548-2.221-2.626-2.325-.078-.104-.63-0.838-.63-1.6 0-.762.399-1.137.541-1.293.141-.156.311-.195.414-.195.104 0 .207.001.297.006.096.005.226-.036.353.27.13.313.447 1.089.486 1.168.039.078.065.17.013.273-.052.104-.078.17-.156.26-.078.091-.164.204-.234.274-.078.078-.16.163-.069.319.091.156.405.669.87 1.082.598.533 1.101.698 1.257.776.156.078.247.065.338-.039.091-.104.39-0.454.494-.61.104-.156.208-.13.351-.078.143.052.909.429 1.065.507.156.078.26.117.299.182.039.065.039.377-.101.771z"/>
+                </svg>
+                <span>Agendar visita por WhatsApp</span>
+              </a>
+              <a 
+                href="https://maps.google.com/?q=Calle+20+Sur+%2318-14+Restrepo+Bogota" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-secondary btn-sm"
+              >
+                <span class="material-symbols-outlined">directions</span>
+                <span>Ver en Google Maps</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECCIÓN 7: NUESTRO PROCESO DE FABRICACIÓN AL DETALLE
+         ======================================================================== -->
+    <section class="process-section" id="proceso-fabricacion">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-badge">
+            <span class="material-symbols-outlined" style="font-size: 16px;">precision_manufacturing</span>
+            <span>DE NUESTRA PLANTA A TU HOGAR</span>
+          </div>
+          <h2 class="section-title">
+            Nuestro proceso de fabricación <span class="accent-blue">al detalle</span>
+          </h2>
+          <p class="section-subtitle">
+            Sin intermediarios. Cada Colchón Slim One es confeccionado con tecnología de vanguardia y mano de obra calificada en nuestra propia fábrica.
+          </p>
+        </div>
+
+        <div class="process-cards-grid">
+          
+          <!-- Paso 1 -->
+          <div class="process-card">
+            <div class="process-card-media" data-process-index="0" role="button" tabindex="0" aria-label="Ver imagen ampliada de acolchado computarizado CNC">
+              <img 
+                src="images/Operario en máquina de acolchado industrial.png" 
+                alt="Operario en máquina de acolchado industrial CNC de colchones" 
+                class="process-card-img"
+                loading="lazy"
+                onerror="if (!this.dataset.retried) { this.dataset.retried = '1'; this.src = 'images/Operario%20en%20m%C3%A1quina%20de%20acolchado%20industrial.png'; }"
+              >
+              <div class="process-step-pill">Paso 01</div>
+              <button class="media-zoom-btn" type="button" aria-label="Ampliar imagen de acolchado computarizado">
+                <span class="material-symbols-outlined">zoom_in</span>
+              </button>
+            </div>
+            <div class="process-card-body">
+              <div class="process-card-category">
+                <span class="material-symbols-outlined">memory</span>
+                <span>TECNOLOGÍA CNC</span>
+              </div>
+              <h4 class="process-card-title">Acolchado Computarizado</h4>
+              <p class="process-card-desc">
+                Nuestra máquina pantógrafo industrial une la tela Jacquard y la espuma D26 mediante patrones precisos que distribuyen el alivio de presión ergonómico en toda la superficie.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="process-card">
+            <div class="process-card-media" data-process-index="1" role="button" tabindex="0" aria-label="Ver imagen ampliada de calibración y tensión">
+              <img 
+                src="images/Operario ajustando máquina de acolchado industrial.png" 
+                alt="Operario ajustando guías y tensión en máquina de acolchado industrial" 
+                class="process-card-img"
+                loading="lazy"
+                onerror="if (!this.dataset.retried) { this.dataset.retried = '1'; this.src = 'images/Operario%20ajustando%20m%C3%A1quina%20de%20acolchado%20industrial.png'; }"
+              >
+              <div class="process-step-pill">Paso 02</div>
+              <button class="media-zoom-btn" type="button" aria-label="Ampliar imagen de calibración y ajuste">
+                <span class="material-symbols-outlined">zoom_in</span>
+              </button>
+            </div>
+            <div class="process-card-body">
+              <div class="process-card-category">
+                <span class="material-symbols-outlined">tune</span>
+                <span>AJUSTE EXPERTO</span>
+              </div>
+              <h4 class="process-card-title">Calibración & Tensión</h4>
+              <p class="process-card-desc">
+                Supervisión manual continua en cada cuadrante. El operario calibra la tensión exacta de los tejidos para garantizar que el colchón conserve su firmeza y no sufra deformaciones.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="process-card">
+            <div class="process-card-media" data-process-index="2" role="button" tabindex="0" aria-label="Ver imagen ampliada de cerrado y ribeteado final">
+              <img 
+                src="images/Costura industrial de colchón en fábrica.png" 
+                alt="Costura industrial de cerrado perimetral de colchón con cinta ribeteadora" 
+                class="process-card-img"
+                loading="lazy"
+                onerror="if (!this.dataset.retried) { this.dataset.retried = '1'; this.src = 'images/Costura%20industrial%20de%20colch%C3%B3n%20en%20f%C3%A1brica.png'; }"
+              >
+              <div class="process-step-pill">Paso 03</div>
+              <button class="media-zoom-btn" type="button" aria-label="Ampliar imagen de costura y cerrado">
+                <span class="material-symbols-outlined">zoom_in</span>
+              </button>
+            </div>
+            <div class="process-card-body">
+              <div class="process-card-category">
+                <span class="material-symbols-outlined">precision_manufacturing</span>
+                <span>CONFECCIÓN MAESTRA</span>
+              </div>
+              <h4 class="process-card-title">Cerrado & Ribeteado Final</h4>
+              <p class="process-card-desc">
+                Confección perimetral con máquina ribeteadora de alto rendimiento. Encerramos la unidad resortada en acero de alto carbono con costuras reforzadas para máxima vida útil doble cara.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Barra de Confianza: Beneficios de Comprar al Fabricante -->
+        <div class="factory-trust-strip">
+          <div class="trust-strip-item">
+            <div class="trust-strip-icon">
+              <span class="material-symbols-outlined">storefront</span>
+            </div>
+            <div class="trust-strip-text">
+              <strong>Compra sin intermediarios</strong>
+              <span>Precio directo de fábrica en Bogotá</span>
+            </div>
+          </div>
+          
+          <div class="trust-strip-item">
+            <div class="trust-strip-icon">
+              <span class="material-symbols-outlined">verified_user</span>
+            </div>
+            <div class="trust-strip-text">
+              <strong>Garantía presencial</strong>
+              <span>Respaldo total en tienda física</span>
+            </div>
+          </div>
+
+          <div class="trust-strip-item">
+            <div class="trust-strip-icon">
+              <span class="material-symbols-outlined">local_shipping</span>
+            </div>
+            <div class="trust-strip-text">
+              <strong>Embalaje industrial</strong>
+              <span>Protegido de fábrica hasta tu cama</span>
+            </div>
+          </div>
+
+          <div class="trust-strip-item">
+            <div class="trust-strip-icon">
+              <span class="material-symbols-outlined">health_and_safety</span>
+            </div>
+            <div class="trust-strip-text">
+              <strong>Tratamiento higiénico</strong>
+              <span>Antiácaros y antibacterial de serie</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECCIÓN 7: FAQ & FINAL CTA
          ======================================================================== -->
     <section class="faq-section" id="faq">
       <div class="container">
@@ -761,7 +1071,66 @@
     </a>
   </aside>
 
+  <!-- ========================================================================
+       MODAL LIGHTBOX VISOR DE GALERÍA (PUNTO FÍSICO & PROCESO)
+       ======================================================================== -->
+  <div class="gallery-modal" id="galleryModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Visor ampliado de imágenes del punto físico y proceso">
+    <div class="gallery-modal-backdrop" id="galleryModalBackdrop"></div>
+    <div class="gallery-modal-container">
+      <button class="gallery-modal-ctrl gallery-ctrl-close" id="galleryModalClose" type="button" aria-label="Cerrar visor ampliado">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      
+      <button class="gallery-modal-ctrl gallery-ctrl-prev" id="galleryModalPrev" type="button" aria-label="Ver imagen anterior">
+        <span class="material-symbols-outlined">arrow_back_ios_new</span>
+      </button>
+      
+      <button class="gallery-modal-ctrl gallery-ctrl-next" id="galleryModalNext" type="button" aria-label="Ver imagen siguiente">
+        <span class="material-symbols-outlined">arrow_forward_ios</span>
+      </button>
+
+      <div class="gallery-modal-card">
+        <div class="gallery-modal-media-side">
+          <img src="images/Punto físico en Restrepo.png" alt="" class="gallery-modal-img" id="galleryModalImg">
+        </div>
+        <div class="gallery-modal-info-side">
+          <div class="gallery-info-header">
+            <span class="gallery-info-tag" id="galleryInfoTag">TIENDA FÍSICA OFICIAL</span>
+            <span class="gallery-info-counter" id="galleryInfoCounter">1 / 2</span>
+          </div>
+          <h3 class="gallery-info-title" id="galleryInfoTitle">Fachada Principal en el Restrepo, Bogotá</h3>
+          <p class="gallery-info-desc" id="galleryInfoDesc">
+            Calle 20 Sur #18-14. Visítanos en nuestra tienda física para conocer de primera mano la calidad y confort del Colchón Slim One.
+          </p>
+          <div class="gallery-info-actions">
+            <a 
+              href="https://wa.me/573184625453?text=Hola%20Pagureo%2C%20quiero%20visitar%20el%20punto%20f%C3%ADsico%20en%20el%20Restrepo%20y%20conocer%20m%C3%A1s%20del%20Colch%C3%B3n%20Slim%20One." 
+              class="btn btn-primary btn-sm"
+              data-whatsapp-cta
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <svg class="whatsapp-icon-svg" viewBox="5.5 5.8 12.5 12.2" aria-hidden="true">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 2.011.924 3.149.924l.005.001c3.18 0 5.767-2.587 5.768-5.766.001-3.182-2.585-5.767-5.773-5.773zm3.364 8.163c-.14.394-.712.723-1.002.771-.278.046-.641.082-1.849-.418-1.547-.64-2.548-2.221-2.626-2.325-.078-.104-.63-0.838-.63-1.6 0-.762.399-1.137.541-1.293.141-.156.311-.195.414-.195.104 0 .207.001.297.006.096.005.226-.036.353.27.13.313.447 1.089.486 1.168.039.078.065.17.013.273-.052.104-.078.17-.156.26-.078.091-.164.204-.234.274-.078.078-.16.163-.069.319.091.156.405.669.87 1.082.598.533 1.101.698 1.257.776.156.078.247.065.338-.039.091-.104.39-0.454.494-.61.104-.156.208-.13.351-.078.143.052.909.429 1.065.507.156.078.26.117.299.182.039.065.039.377-.101.771z"/>
+              </svg>
+              <span>Consultar por WhatsApp</span>
+            </a>
+            <a 
+              href="https://maps.google.com/?q=Calle+20+Sur+%2318-14+Restrepo+Bogota" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn btn-secondary btn-sm"
+            >
+              <span class="material-symbols-outlined">map</span>
+              <span>Abrir Mapa</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Script de Interacción Pagureo -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2.2"></script>
 </body>
 </html>
