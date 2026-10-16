@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================================================== */
   const STORE_GALLERY_DATA = [
     {
-      src: 'images/Punto físico en Restrepo.png',
+      src: 'images/Encuéntranos en Restrepo.png',
       tag: 'TIENDA FÍSICA OFICIAL',
       title: 'Fachada Principal en el Restrepo, Bogotá',
       desc: 'Calle 20 Sur #18-14. Visítanos en nuestra tienda física para conocer de primera mano la calidad, soporte y confort del Colchón Slim One.'
