@@ -6,7 +6,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // Configuración Oficial de WhatsApp Pagureo
-  const WHATSAPP_PHONE = '573184625453'; // Número oficial: +57 318 462 5453
+  const WHATSAPP_PHONE = '573208067748'; // Número oficial: +57 320 806 7748
   const WHATSAPP_DEFAULT_MSG = encodeURIComponent(
     'Hola Pagureo, vi el Colchón Slim One en la página y quiero recibir más información.'
   );
